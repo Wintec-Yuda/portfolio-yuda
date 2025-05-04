@@ -49,7 +49,6 @@ const content = {
         points: [
           'Learned fundamentals of Machine Learning, AI, Computer Vision, Data Science, and Natural Language Processing (NLP).',
           'Collaborated in teams to develop AI-based final projects solving real problems in public service sectors.',
-          'Involved in data preprocessing, AI modeling, and project result presentations to evaluator panels.'
         ],
         certificate: '/certificates/ai-mastery.jpeg'
       },
@@ -60,7 +59,6 @@ const content = {
         points: [
           'Designed and developed internal training digitization web system, from registration to reporting.',
           'Used Laravel 10 & jQuery to build user-friendly, efficient applications integrated with company database.',
-          'Improved training process efficiency by 70% & reduced manual data input errors.'
         ],
         certificate: '/certificates/kalbe.jpeg'
       },
@@ -71,7 +69,6 @@ const content = {
         points: [
           'Developed Tryout Academy website, an online exam platform allowing teachers to create tests and students to purchase and take exams.',
           'Focused on creating interactive & responsive UI/UX using Laravel 10 & Vue 3.',
-          'Increased user engagement by 30% with intuitive interface design and improved user experience.'
         ],
         certificate: '/certificates/kasih-inovasi.jpeg'
       }
@@ -163,7 +160,6 @@ const content = {
         points: [
           'Mempelajari dasar Machine Learning, AI, Computer Vision, Data Science, dan Natural Language Processing (NLP).',
           'Berkolaborasi dalam tim untuk mengembangkan proyek akhir berbasis AI yang memecahkan masalah nyata di sektor layanan publik.',
-          'Terlibat dalam data preprocessing, pemodelan AI, serta presentasi hasil proyek ke panel evaluator.'
         ],
         certificate: '/certificates/ai-mastery.jpeg'
       },
@@ -174,7 +170,6 @@ const content = {
         points: [
           'Merancang dan mengembangkan sistem web digitalisasi pelatihan internal, dari registrasi hingga pelaporan hasil.',
           'Menggunakan Laravel 10 & jQuery untuk membangun aplikasi yang user-friendly, efisien, dan terintegrasi dengan database perusahaan.',
-          'Meningkatkan efisiensi proses pelatihan hingga 70% & mengurangi kesalahan input data manual.'
         ],
         certificate: '/certificates/kalbe.jpeg'
       },
@@ -185,7 +180,6 @@ const content = {
         points: [
           'Mengembangkan website Tryout Academy, platform ujian online yang memungkinkan guru membuat soal ujian & siswa membeli serta mengerjakan ujian.',
           'Berfokus pada pembuatan UI/UX interaktif & responsif menggunakan Laravel 10 & Vue 3.',
-          'Berhasil meningkatkan user engagement hingga 30% dengan desain antarmuka yang intuitif & pengalaman pengguna yang lebih baik.'
         ],
         certificate: '/certificates/kasih-inovasi.jpeg'
       }
