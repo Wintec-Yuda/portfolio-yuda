@@ -398,7 +398,7 @@ export default function Home() {
 										<button
 											key={item}
 											onClick={() => scrollToSection(item)}
-											className={`relative px-1 py-2 text-sm font-medium transition-colors ${
+											className={`relative px-1 py-2 text-sm font-medium transition-colors cursor-pointer ${
 												activeSection === item
 													? "text-blue-400"
 													: "text-gray-300 hover:text-white"
@@ -425,7 +425,7 @@ export default function Home() {
 								whileHover={{ scale: 1.05 }}
 								whileTap={{ scale: 0.95 }}
 								onClick={toggleLanguage}
-								className="flex items-center gap-1 px-3 py-1.5 rounded-full bg-gray-800 hover:bg-gray-700 text-sm"
+								className="flex items-center gap-1 px-3 py-1.5 rounded-full bg-gray-800 hover:bg-gray-700 text-sm cursor-pointer"
 							>
 								<FiGlobe className="text-blue-400" />
 								<span>{language === "en" ? "ID" : "EN"}</span>
@@ -434,7 +434,7 @@ export default function Home() {
 
 						{/* Mobile menu button */}
 						<button
-							className="md:hidden p-2 rounded-md text-gray-300 hover:text-white focus:outline-none"
+							className="md:hidden p-2 rounded-md text-gray-300 hover:text-white focus:outline-none cursor-pointer"
 							onClick={() => setIsMenuOpen(!isMenuOpen)}
 						>
 							<svg
@@ -493,7 +493,7 @@ export default function Home() {
 								)}
 								<button
 									onClick={toggleLanguage}
-									className="flex items-center gap-2 w-full text-left px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-white"
+									className="flex items-center gap-2 w-full text-left px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-white cursor-pointer"
 								>
 									<FiGlobe className="text-blue-400" />
 									{language === "en"
@@ -572,7 +572,7 @@ export default function Home() {
 								whileHover={{ scale: 1.05 }}
 								whileTap={{ scale: 0.95 }}
 								onClick={() => scrollToSection("projects")}
-								className="mt-8 px-6 py-3 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium shadow-lg hover:shadow-xl transition-all"
+								className="mt-8 px-6 py-3 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium shadow-lg hover:shadow-xl transition-all cursor-pointer"
 							>
 								{t.hero.cta}
 							</motion.button>
@@ -916,7 +916,7 @@ export default function Home() {
 										onClick={() =>
 											openCertificate(t.experience.aiMastery.certificate)
 										}
-										className="px-4 py-2 bg-blue-900/30 text-blue-300 rounded-lg text-sm flex items-center gap-2"
+										className="px-4 py-2 bg-blue-900/30 text-blue-300 rounded-lg text-sm flex items-center gap-2 cursor-pointer"
 									>
 										{t.experience.viewCertificate}
 										<FiExternalLink className="text-xs" />
@@ -965,7 +965,7 @@ export default function Home() {
 										onClick={() =>
 											openCertificate(t.experience.kalbe.certificate)
 										}
-										className="px-4 py-2 bg-blue-900/30 text-blue-300 rounded-lg text-sm flex items-center gap-2"
+										className="px-4 py-2 bg-blue-900/30 text-blue-300 rounded-lg text-sm flex items-center gap-2 cursor-pointer"
 									>
 										{t.experience.viewCertificate}
 										<FiExternalLink className="text-xs" />
@@ -1014,7 +1014,7 @@ export default function Home() {
 										onClick={() =>
 											openCertificate(t.experience.kasihInovasi.certificate)
 										}
-										className="px-4 py-2 bg-blue-900/30 text-blue-300 rounded-lg text-sm flex items-center gap-2"
+										className="px-4 py-2 bg-blue-900/30 text-blue-300 rounded-lg text-sm flex items-center gap-2 cursor-pointer"
 									>
 										{t.experience.viewCertificate}
 										<FiExternalLink className="text-xs" />
@@ -1292,7 +1292,7 @@ export default function Home() {
 											whileHover={{ scale: 1.02 }}
 											whileTap={{ scale: 0.98 }}
 											type="submit"
-											className="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all"
+											className="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all cursor-pointer"
 										>
 											{t.contact.form.submit}
 										</motion.button>
@@ -1354,7 +1354,7 @@ export default function Home() {
 						>
 							<button
 								onClick={closeCertificate}
-								className="absolute top-4 right-4 z-10 p-2 rounded-full bg-gray-700 hover:bg-gray-600 text-white"
+								className="absolute top-4 right-4 z-10 p-2 rounded-full bg-gray-700 hover:bg-gray-600 text-white cursor-pointer"
 							>
 								<FiX className="w-5 h-5" />
 							</button>
