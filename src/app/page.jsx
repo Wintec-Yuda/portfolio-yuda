@@ -103,11 +103,25 @@ const content = {
 			title: "Featured Projects",
 			items: [
 				{
-					title: "Chatbot Customer Service",
+					title: "TestPrepAI - TOEFL ITP Practice & Simulation Platform",
 					description:
-						"Website chatbot for restaurant customer service, automatically answering common questions, reducing staff workload, and improving customer satisfaction.",
-					link: "https://chatbot-cs-demo.vercel.app",
-					image: "/projects/chatbot.png",
+						"Built an interactive web application for TOEFL ITP preparation that enables users to practice specific sections (Listening, Structure, Reading), take full test simulations, and receive automated scoring, analysis, and personalized AI-generated feedback to track progress and improve efficiently.",
+					link: "https://testprepai.vercel.app/testprepai",
+					image: "/projects/testprepai.png",
+				},
+				{
+					title: "Smart CV Screening",
+					description:
+						"Enhance your hiring process with AI-powered CV analysis for screening, optimization, and intelligent interviewing.",
+					link: "https://website-screening-cv.vercel.app",
+					image: "/projects/screening.png",
+				},
+				{
+					title: "Accounting Web App",
+					description:
+						"Automatic accounting website that can generate transaction journals automatically by just inputting descriptions & transaction amounts, saving manual recording time & minimizing human error.",
+					link: "https://website-accounting.vercel.app",
+					image: "/projects/accounting.png",
 				},
 				{
 					title: "Portomake",
@@ -117,18 +131,18 @@ const content = {
 					image: "/projects/portomake.png",
 				},
 				{
+					title: "Chatbot Customer Service",
+					description:
+						"Website chatbot for restaurant customer service, automatically answering common questions, reducing staff workload, and improving customer satisfaction.",
+					link: "https://chatbot-cs-demo.vercel.app",
+					image: "/projects/chatbot.png",
+				},
+				{
 					title: "Point of Sales (POS)",
 					description:
 						"Web-based Point of Sales application with AI-based sales analysis features, helping business owners make data-driven decisions based on sales patterns.",
 					link: "https://website-point-of-sale.vercel.app",
 					image: "/projects/pos.png",
-				},
-				{
-					title: "Accounting Web App",
-					description:
-						"Automatic accounting website that can generate transaction journals automatically by just inputting descriptions & transaction amounts, saving manual recording time & minimizing human error.",
-					link: "https://website-accounting.vercel.app",
-					image: "/projects/accounting.png",
 				},
 			],
 			viewDemo: "View Demo",
