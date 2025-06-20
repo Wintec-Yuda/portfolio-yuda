@@ -31,258 +31,271 @@ import {
 } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 
-// Language content
 const content = {
-	en: {
-		nav: {
-			about: "About",
-			skills: "Skills",
-			experience: "Experience",
-			projects: "Projects",
-			contact: "Contact",
-		},
-		hero: {
-			title: "AI Web Engineer",
-			subtitle: "Building intelligent web solutions with modern technologies",
-			cta: "View My Work",
-		},
-		about: {
-			title: "About Me",
-			description:
-				"I am an enthusiastic AI Web Engineer passionate about modern web development, artificial intelligence integration, and applying technology to solve real-world problems. Experienced in building end-to-end web systems, both frontend and backend, as well as developing AI features to enhance platform efficiency and capabilities. I enjoy new challenges, can work collaboratively or independently, and am committed to delivering functional, scalable, and user-friendly results.",
-		},
-		skills: {
-			title: "Skills & Expertise",
-			hardSkills: "Hard Skills",
-			softSkills: "Soft Skills",
-			tools: "Tools & Frameworks",
-		},
-		experience: {
-			title: "Education & Experience",
-			education: "Education",
-			internships: "Internships",
-			university: "Nusantara PGRI Kediri University",
-			description:
-				"I am active in both academic and non-academic activities, participating in technology-based projects and software development. Strengthened practical skills through independent exploration of web and AI technologies beyond the campus curriculum.",
-			degree: "Bachelor of Computer Science (S.Kom)",
-			period: "2020 – 2024",
-			gpa: "GPA: 3.84",
-			viewCertificate: "View Certificate",
-			aiMastery: {
-				title: "AI Mastery – Independent Study",
-				company: "Orbit Future Academy",
-				period: "August 2022 – December 2022",
-				points: [
-					"Learned fundamentals of Machine Learning, AI, Computer Vision, Data Science, and Natural Language Processing (NLP).",
-					"Collaborated in teams to develop AI-based final projects solving real problems in public service sectors.",
-				],
-				certificate: "/certificates/ai-mastery.jpeg",
-			},
-			kalbe: {
-				title: "Web Developer – Internship",
-				company: "PT Kalbe Farma",
-				period: "February 2023 – June 2023",
-				points: [
-					"Designed and developed internal training digitization web system, from registration to reporting.",
-					"Used Laravel 10 & jQuery to build user-friendly, efficient applications integrated with company database.",
-				],
-				certificate: "/certificates/kalbe.jpeg",
-			},
-			kasihInovasi: {
-				title: "Frontend Developer – Internship",
-				company: "CV Kasih Inovasi Teknologi",
-				period: "August 2023 – December 2023",
-				points: [
-					"Developed Tryout Academy website, an online exam platform allowing teachers to create tests and students to purchase and take exams.",
-					"Focused on creating interactive & responsive UI/UX using Laravel 10 & Vue 3.",
-				],
-				certificate: "/certificates/kasih-inovasi.jpeg",
-			},
-		},
-		projects: {
-			title: "Featured Projects",
-			items: [
-				{
-					title: "TestPrepAI - TOEFL ITP Practice & Simulation Platform",
-					description:
-						"Built an interactive web application for TOEFL ITP preparation that enables users to practice specific sections (Listening, Structure, Reading), take full test simulations, and receive automated scoring, analysis, and personalized AI-generated feedback to track progress and improve efficiently.",
-					link: "https://testprepai.vercel.app/testprepai",
-					image: "/projects/testprepai.png",
-				},
-				{
-					title: "Smart CV Screening",
-					description:
-						"Enhance your hiring process with AI-powered CV analysis for screening, optimization, and intelligent interviewing.",
-					link: "https://website-screening-cv.vercel.app",
-					image: "/projects/screening.png",
-				},
-				{
-					title: "Accounting Web App",
-					description:
-						"Automatic accounting website that can generate transaction journals automatically by just inputting descriptions & transaction amounts, saving manual recording time & minimizing human error.",
-					link: "https://website-accounting.vercel.app",
-					image: "/projects/accounting.png",
-				},
-				{
-					title: "Portomake",
-					description:
-						"Website portfolio creation service for professionals & freelancers, with order features, template catalog, and custom website consultation.",
-					link: "https://website-portomake.vercel.app",
-					image: "/projects/portomake.png",
-				},
-				{
-					title: "Chatbot Customer Service",
-					description:
-						"Website chatbot for restaurant customer service, automatically answering common questions, reducing staff workload, and improving customer satisfaction.",
-					link: "https://chatbot-cs-demo.vercel.app",
-					image: "/projects/chatbot.png",
-				},
-				{
-					title: "Point of Sales (POS)",
-					description:
-						"Web-based Point of Sales application with AI-based sales analysis features, helping business owners make data-driven decisions based on sales patterns.",
-					link: "https://website-point-of-sale.vercel.app",
-					image: "/projects/pos.png",
-				},
-			],
-			viewDemo: "View Demo",
-		},
-		contact: {
-			title: "Get In Touch",
-			subtitle:
-				"Have a project in mind or want to collaborate? Feel free to reach out!",
-			form: {
-				name: "Your Name",
-				email: "Your Email",
-				subject: "Subject",
-				message: "Your Message",
-				submit: "Send Message",
-			},
-			success: "Message sent successfully!",
-			error: "There was an error sending your message. Please try again.",
-		},
-		footer: {
-			copyright: "© 2024 Mochamad Yuda Trinurais. All rights reserved.",
-		},
-	},
-	id: {
-		nav: {
-			about: "Tentang",
-			skills: "Keahlian",
-			experience: "Pengalaman",
-			projects: "Proyek",
-			contact: "Kontak",
-		},
-		hero: {
-			title: "AI Web Engineer",
-			subtitle: "Membangun solusi web cerdas dengan teknologi modern",
-			cta: "Lihat Karya Saya",
-		},
-		about: {
-			title: "Tentang Saya",
-			description:
-				"Saya adalah seorang AI Web Engineer yang antusias dengan pengembangan web modern, integrasi kecerdasan buatan, dan penerapan teknologi untuk menyelesaikan masalah nyata. Memiliki pengalaman dalam membangun sistem web end-to-end, baik frontend maupun backend, serta mengembangkan fitur AI untuk meningkatkan efisiensi dan kapabilitas platform. Saya menyukai tantangan baru, mampu bekerja secara kolaboratif maupun mandiri, serta berkomitmen untuk memberikan hasil yang fungsional, scalable, dan user-friendly.",
-		},
-		skills: {
-			title: "Keahlian",
-			hardSkills: "Hard Skills",
-			softSkills: "Soft Skills",
-			tools: "Tools & Framework",
-		},
-		experience: {
-			title: "Pendidikan & Pengalaman",
-			education: "Pendidikan",
-			internships: "Magang",
-			university: "Universitas Nusantara PGRI Kediri",
-			description:
-				"Saya aktif dalam kegiatan akademik & non-akademik, berpartisipasi dalam proyek berbasis teknologi & pengembangan perangkat lunak. Memperkuat keterampilan praktis melalui eksplorasi mandiri teknologi web & AI di luar kurikulum kampus.",
-			degree: "Sarjana Teknik Informatika (S.Kom)",
-			period: "2020 – 2024",
-			gpa: "IPK: 3.84",
-			viewCertificate: "Lihat Sertifikat",
-			aiMastery: {
-				title: "AI Mastery – Studi Independen",
-				company: "Orbit Future Academy",
-				period: "Agustus 2022 – Desember 2022",
-				points: [
-					"Mempelajari dasar Machine Learning, AI, Computer Vision, Data Science, dan Natural Language Processing (NLP).",
-					"Berkolaborasi dalam tim untuk mengembangkan proyek akhir berbasis AI yang memecahkan masalah nyata di sektor layanan publik.",
-				],
-				certificate: "/certificates/ai-mastery.jpeg",
-			},
-			kalbe: {
-				title: "Web Developer – Magang",
-				company: "PT Kalbe Farma",
-				period: "Februari 2023 – Juni 2023",
-				points: [
-					"Merancang dan mengembangkan sistem web digitalisasi pelatihan internal, dari registrasi hingga pelaporan hasil.",
-					"Menggunakan Laravel 10 & jQuery untuk membangun aplikasi yang user-friendly, efisien, dan terintegrasi dengan database perusahaan.",
-				],
-				certificate: "/certificates/kalbe.jpeg",
-			},
-			kasihInovasi: {
-				title: "Frontend Developer – Magang",
-				company: "CV Kasih Inovasi Teknologi",
-				period: "Agustus 2023 – Desember 2023",
-				points: [
-					"Mengembangkan website Tryout Academy, platform ujian online yang memungkinkan guru membuat soal ujian & siswa membeli serta mengerjakan ujian.",
-					"Berfokus pada pembuatan UI/UX interaktif & responsif menggunakan Laravel 10 & Vue 3.",
-				],
-				certificate: "/certificates/kasih-inovasi.jpeg",
-			},
-		},
-		projects: {
-			title: "Proyek Unggulan",
-			items: [
-				{
-					title: "Chatbot Customer Service",
-					description:
-						"Website chatbot untuk layanan pelanggan restoran, membantu menjawab pertanyaan umum secara otomatis, mengurangi beban staf, dan meningkatkan kepuasan pelanggan.",
-					link: "https://chatbot-cs-demo.vercel.app",
-					image: "/projects/chatbot.png",
-				},
-				{
-					title: "Portomake",
-					description:
-						"Website jasa pembuatan website portfolio untuk profesional & freelancer, dengan fitur pemesanan, katalog template, dan konsultasi custom website.",
-					link: "https://website-portomake.vercel.app",
-					image: "/projects/portomake.png",
-				},
-				{
-					title: "Point of Sales (POS)",
-					description:
-						"Aplikasi Point of Sales berbasis web dengan fitur analisis penjualan berbasis AI, membantu pemilik usaha membuat keputusan berbasis data & pola penjualan.",
-					link: "https://website-point-of-sale.vercel.app",
-					image: "/projects/pos.png",
-				},
-				{
-					title: "Accounting Web App",
-					description:
-						"Website akuntansi otomatis yang dapat menghasilkan jurnal transaksi secara otomatis hanya dengan menginput deskripsi & nominal transaksi, menghemat waktu pencatatan manual & meminimalkan human error.",
-					link: "https://website-accounting.vercel.app",
-					image: "/projects/accounting.png",
-				},
-			],
-			viewDemo: "Lihat Demo",
-		},
-		contact: {
-			title: "Hubungi Saya",
-			subtitle:
-				"Ada proyek yang ingin dikerjakan bersama atau ingin berkolaborasi? Silakan hubungi saya!",
-			form: {
-				name: "Nama Anda",
-				email: "Email Anda",
-				subject: "Subjek",
-				message: "Pesan Anda",
-				submit: "Kirim Pesan",
-			},
-			success: "Pesan terkirim dengan sukses!",
-			error: "Terjadi kesalahan saat mengirim pesan. Silakan coba lagi.",
-		},
-		footer: {
-			copyright: "© 2024 Mochamad Yuda Trinurais. Semua hak dilindungi.",
-		},
-	},
+  en: {
+    nav: {
+      about: "About",
+      skills: "Skills",
+      experience: "Experience",
+      projects: "Projects",
+      contact: "Contact",
+    },
+    hero: {
+      title: "AI Web Engineer",
+      subtitle: "Building intelligent web solutions with modern technologies",
+      cta: "View My Work",
+    },
+    about: {
+      title: "About Me",
+      description:
+        "I am an enthusiastic AI Web Engineer passionate about modern web development, artificial intelligence integration, and applying technology to solve real-world problems. Experienced in building end-to-end web systems, both frontend and backend, as well as developing AI features to enhance platform efficiency and capabilities. I enjoy new challenges, can work collaboratively or independently, and am committed to delivering functional, scalable, and user-friendly results.",
+    },
+    skills: {
+      title: "Skills & Expertise",
+      hardSkills: "Hard Skills",
+      softSkills: "Soft Skills",
+      tools: "Tools & Frameworks",
+    },
+    experience: {
+      title: "Education & Experience",
+      education: "Education",
+      internships: "Internships",
+      university: "Nusantara PGRI Kediri University",
+      description:
+        "I am active in both academic and non-academic activities, participating in technology-based projects and software development. Strengthened practical skills through independent exploration of web and AI technologies beyond the campus curriculum.",
+      degree: "Bachelor of Computer Science (S.Kom)",
+      period: "2020 – 2024",
+      gpa: "GPA: 3.84",
+      viewCertificate: "View Certificate",
+      aiMastery: {
+        title: "AI Mastery – Independent Study",
+        company: "Orbit Future Academy",
+        period: "August 2022 – December 2022",
+        points: [
+          "Learned fundamentals of Machine Learning, AI, Computer Vision, Data Science, and Natural Language Processing (NLP).",
+          "Collaborated in teams to develop AI-based final projects solving real problems in public service sectors.",
+        ],
+        certificate: "/certificates/ai-mastery.jpeg",
+      },
+      kalbe: {
+        title: "Web Developer – Internship",
+        company: "PT Kalbe Farma",
+        period: "February 2023 – June 2023",
+        points: [
+          "Designed and developed internal training digitization web system, from registration to reporting.",
+          "Used Laravel 10 & jQuery to build user-friendly, efficient applications integrated with company database.",
+        ],
+        certificate: "/certificates/kalbe.jpeg",
+      },
+      kasihInovasi: {
+        title: "Frontend Developer – Internship",
+        company: "CV Kasih Inovasi Teknologi",
+        period: "August 2023 – December 2023",
+        points: [
+          "Developed Tryout Academy website, an online exam platform allowing teachers to create tests and students to purchase and take exams.",
+          "Focused on creating interactive & responsive UI/UX using Laravel 10 & Vue 3.",
+        ],
+        certificate: "/certificates/kasih-inovasi.jpeg",
+      },
+    },
+    projects: {
+      title: "Featured Projects",
+      items: [
+        {
+          title: "TestPrepAI - TOEFL ITP Practice & Simulation Platform",
+          description:
+            "Built an interactive web application for TOEFL ITP preparation that enables users to practice specific sections (Listening, Structure, Reading), take full test simulations, and receive automated scoring, analysis, and personalized AI-generated feedback to track progress and improve efficiently.",
+          link: "https://testprepai.vercel.app/testprepai",
+          image: "/projects/testprepai.png",
+        },
+        {
+          title: "Smart CV Screening",
+          description:
+            "Enhance your hiring process with AI-powered CV analysis for screening, optimization, and intelligent interviewing.",
+          link: "https://website-screening-cv.vercel.app",
+          image: "/projects/screening.png",
+        },
+        {
+          title: "Accounting Web App",
+          description:
+            "Automatic accounting website that can generate transaction journals automatically by just inputting descriptions & transaction amounts, saving manual recording time & minimizing human error.",
+          link: "https://website-accounting.vercel.app",
+          image: "/projects/accounting.png",
+        },
+        {
+          title: "Portomake",
+          description:
+            "Website portfolio creation service for professionals & freelancers, with order features, template catalog, and custom website consultation.",
+          link: "https://website-portomake.vercel.app",
+          image: "/projects/portomake.png",
+        },
+        {
+          title: "Chatbot Customer Service",
+          description:
+            "Website chatbot for restaurant customer service, automatically answering common questions, reducing staff workload, and improving customer satisfaction.",
+          link: "https://chatbot-cs-demo.vercel.app",
+          image: "/projects/chatbot.png",
+        },
+        {
+          title: "Point of Sales (POS)",
+          description:
+            "Web-based Point of Sales application with AI-based sales analysis features, helping business owners make data-driven decisions based on sales patterns.",
+          link: "https://website-point-of-sale.vercel.app",
+          image: "/projects/pos.png",
+        },
+      ],
+      viewDemo: "View Demo",
+    },
+    contact: {
+      title: "Get In Touch",
+      subtitle:
+        "Have a project in mind or want to collaborate? Feel free to reach out!",
+      form: {
+        name: "Your Name",
+        email: "Your Email",
+        subject: "Subject",
+        message: "Your Message",
+        submit: "Send Message",
+      },
+      success: "Message sent successfully!",
+      error: "There was an error sending your message. Please try again.",
+    },
+    footer: {
+      copyright: "© 2025 Mochamad Yuda Trinurais. All rights reserved.",
+    },
+  },
+  id: {
+    nav: {
+      about: "Tentang",
+      skills: "Keahlian",
+      experience: "Pengalaman",
+      projects: "Proyek",
+      contact: "Kontak",
+    },
+    hero: {
+      title: "AI Web Engineer",
+      subtitle: "Membangun solusi web cerdas dengan teknologi modern",
+      cta: "Lihat Karya Saya",
+    },
+    about: {
+      title: "Tentang Saya",
+      description:
+        "Saya adalah seorang AI Web Engineer yang antusias dengan pengembangan web modern, integrasi kecerdasan buatan, dan penerapan teknologi untuk menyelesaikan masalah nyata. Memiliki pengalaman dalam membangun sistem web end-to-end, baik frontend maupun backend, serta mengembangkan fitur AI untuk meningkatkan efisiensi dan kapabilitas platform. Saya menyukai tantangan baru, mampu bekerja secara kolaboratif maupun mandiri, serta berkomitmen untuk memberikan hasil yang fungsional, scalable, dan user-friendly.",
+    },
+    skills: {
+      title: "Keahlian",
+      hardSkills: "Hard Skills",
+      softSkills: "Soft Skills",
+      tools: "Tools & Framework",
+    },
+    experience: {
+      title: "Pendidikan & Pengalaman",
+      education: "Pendidikan",
+      internships: "Magang",
+      university: "Universitas Nusantara PGRI Kediri",
+      description:
+        "Saya aktif dalam kegiatan akademik & non-akademik, berpartisipasi dalam proyek berbasis teknologi & pengembangan perangkat lunak. Memperkuat keterampilan praktis melalui eksplorasi mandiri teknologi web & AI di luar kurikulum kampus.",
+      degree: "Sarjana Teknik Informatika (S.Kom)",
+      period: "2020 – 2024",
+      gpa: "IPK: 3.84",
+      viewCertificate: "Lihat Sertifikat",
+      aiMastery: {
+        title: "AI Mastery – Studi Independen",
+        company: "Orbit Future Academy",
+        period: "Agustus 2022 – Desember 2022",
+        points: [
+          "Mempelajari dasar Machine Learning, AI, Computer Vision, Data Science, dan Natural Language Processing (NLP).",
+          "Berkolaborasi dalam tim untuk mengembangkan proyek akhir berbasis AI yang memecahkan masalah nyata di sektor layanan publik.",
+        ],
+        certificate: "/certificates/ai-mastery.jpeg",
+      },
+      kalbe: {
+        title: "Web Developer – Magang",
+        company: "PT Kalbe Farma",
+        period: "Februari 2023 – Juni 2023",
+        points: [
+          "Merancang dan mengembangkan sistem web digitalisasi pelatihan internal, dari registrasi hingga pelaporan hasil.",
+          "Menggunakan Laravel 10 & jQuery untuk membangun aplikasi yang user-friendly, efisien, dan terintegrasi dengan database perusahaan.",
+        ],
+        certificate: "/certificates/kalbe.jpeg",
+      },
+      kasihInovasi: {
+        title: "Frontend Developer – Magang",
+        company: "CV Kasih Inovasi Teknologi",
+        period: "Agustus 2023 – Desember 2023",
+        points: [
+          "Mengembangkan website Tryout Academy, platform ujian online yang memungkinkan guru membuat soal ujian & siswa membeli serta mengerjakan ujian.",
+          "Berfokus pada pembuatan UI/UX interaktif & responsif menggunakan Laravel 10 & Vue 3.",
+        ],
+        certificate: "/certificates/kasih-inovasi.jpeg",
+      },
+    },
+    projects: {
+      title: "Proyek Unggulan",
+      items: [
+        {
+          title: "TestPrepAI - Platform Latihan & Simulasi TOEFL ITP",
+          description:
+            "Membangun aplikasi web interaktif untuk persiapan TOEFL ITP yang memungkinkan pengguna berlatih bagian tertentu (Listening, Structure, Reading), mengikuti simulasi ujian lengkap, dan menerima penilaian otomatis, analisis, serta umpan balik yang dihasilkan AI secara personal untuk melacak kemajuan dan meningkatkan efisiensi.",
+          link: "https://testprepai.vercel.app/testprepai",
+          image: "/projects/testprepai.png",
+        },
+        {
+          title: "Smart CV Screening",
+          description:
+            "Tingkatkan proses perekrutan dengan analisis CV berbasis AI untuk penyaringan, optimalisasi, dan wawancara cerdas.",
+          link: "https://website-screening-cv.vercel.app",
+          image: "/projects/screening.png",
+        },
+        {
+          title: "Aplikasi Web Akuntansi",
+          description:
+            "Website akuntansi otomatis yang dapat menghasilkan jurnal transaksi secara otomatis hanya dengan menginput deskripsi & nominal transaksi, menghemat waktu pencatatan manual & meminimalkan human error.",
+          link: "https://website-accounting.vercel.app",
+          image: "/projects/accounting.png",
+        },
+        {
+          title: "Portomake",
+          description:
+            "Website jasa pembuatan website portfolio untuk profesional & freelancer, dengan fitur pemesanan, katalog template, dan konsultasi custom website.",
+          link: "https://website-portomake.vercel.app",
+          image: "/projects/portomake.png",
+        },
+        {
+          title: "Chatbot Layanan Pelanggan",
+          description:
+            "Website chatbot untuk layanan pelanggan restoran, membantu menjawab pertanyaan umum secara otomatis, mengurangi beban staf, dan meningkatkan kepuasan pelanggan.",
+          link: "https://chatbot-cs-demo.vercel.app",
+          image: "/projects/chatbot.png",
+        },
+        {
+          title: "Point of Sales (POS)",
+          description:
+            "Aplikasi Point of Sales berbasis web dengan fitur analisis penjualan berbasis AI, membantu pemilik usaha membuat keputusan berbasis data & pola penjualan.",
+          link: "https://website-point-of-sale.vercel.app",
+          image: "/projects/pos.png",
+        },
+      ],
+      viewDemo: "Lihat Demo",
+    },
+    contact: {
+      title: "Hubungi Saya",
+      subtitle:
+        "Ada proyek yang ingin dikerjakan bersama atau ingin berkolaborasi? Silakan hubungi saya!",
+      form: {
+        name: "Nama Anda",
+        email: "Email Anda",
+        subject: "Subjek",
+        message: "Pesan Anda",
+        submit: "Kirim Pesan",
+      },
+      success: "Pesan terkirim dengan sukses!",
+      error: "Terjadi kesalahan saat mengirim pesan. Silakan coba lagi.",
+    },
+    footer: {
+      copyright: "© 2025 Mochamad Yuda Trinurais. Semua hak dilindungi.",
+    },
+  },
 };
 
 export default function Home() {
