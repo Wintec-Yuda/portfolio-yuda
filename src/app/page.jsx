@@ -12,290 +12,281 @@ import {
 	FiExternalLink,
 	FiX,
 } from "react-icons/fi";
-import {
-	FaReact,
-	FaLaravel,
-	FaVuejs,
-	FaNodeJs,
-	FaPython,
-} from "react-icons/fa";
+import { FaReact, FaLaravel, FaVuejs, FaPython } from "react-icons/fa";
 import {
 	SiNextdotjs,
 	SiTailwindcss,
-	SiNestjs,
-	SiSpringboot,
-	SiMysql,
-	SiPostgresql,
-	SiMongodb,
-	SiDocker,
+	SiTypescript,
+	SiJavascript,
 } from "react-icons/si";
-import { TbBrandFramerMotion } from "react-icons/tb";
+import { TbApi, TbBrandFramerMotion } from "react-icons/tb";
 
 const content = {
-  en: {
-    nav: {
-      about: "About",
-      skills: "Skills",
-      experience: "Experience",
-      projects: "Projects",
-      contact: "Contact",
-    },
-    hero: {
-      title: "AI Web Engineer",
-      subtitle: "Building intelligent web solutions with modern technologies",
-      cta: "View My Work",
-    },
-    about: {
-      title: "About Me",
-      description:
-        "I am an enthusiastic AI Web Engineer passionate about modern web development, artificial intelligence integration, and applying technology to solve real-world problems. Experienced in building end-to-end web systems, both frontend and backend, as well as developing AI features to enhance platform efficiency and capabilities. I enjoy new challenges, can work collaboratively or independently, and am committed to delivering functional, scalable, and user-friendly results.",
-    },
-    skills: {
-      title: "Skills & Expertise",
-      hardSkills: "Hard Skills",
-      softSkills: "Soft Skills",
-      tools: "Tools & Frameworks",
-    },
-    experience: {
-      title: "Education & Experience",
-      education: "Education",
-      internships: "Internships",
-      university: "Nusantara PGRI Kediri University",
-      description:
-        "I am active in both academic and non-academic activities, participating in technology-based projects and software development. Strengthened practical skills through independent exploration of web and AI technologies beyond the campus curriculum.",
-      degree: "Bachelor of Computer Science (S.Kom)",
-      period: "2020 – 2024",
-      gpa: "GPA: 3.84",
-      viewCertificate: "View Certificate",
-      aiMastery: {
-        title: "AI Mastery – Independent Study",
-        company: "Orbit Future Academy",
-        period: "August 2022 – December 2022",
-        points: [
-          "Learned fundamentals of Machine Learning, AI, Computer Vision, Data Science, and Natural Language Processing (NLP).",
-          "Collaborated in teams to develop AI-based final projects solving real problems in public service sectors.",
-        ],
-        certificate: "/certificates/ai-mastery.jpeg",
-      },
-      kalbe: {
-        title: "Web Developer – Internship",
-        company: "PT Kalbe Farma",
-        period: "February 2023 – June 2023",
-        points: [
-          "Designed and developed internal training digitization web system, from registration to reporting.",
-          "Used Laravel 10 & jQuery to build user-friendly, efficient applications integrated with company database.",
-        ],
-        certificate: "/certificates/kalbe.jpeg",
-      },
-      kasihInovasi: {
-        title: "Frontend Developer – Internship",
-        company: "CV Kasih Inovasi Teknologi",
-        period: "August 2023 – December 2023",
-        points: [
-          "Developed Tryout Academy website, an online exam platform allowing teachers to create tests and students to purchase and take exams.",
-          "Focused on creating interactive & responsive UI/UX using Laravel 10 & Vue 3.",
-        ],
-        certificate: "/certificates/kasih-inovasi.jpeg",
-      },
-    },
-    projects: {
-      title: "Featured Projects",
-      items: [
-        {
-          title: "TestPrepAI - TOEFL ITP Practice & Simulation Platform",
-          description:
-            "Built an interactive web application for TOEFL ITP preparation that enables users to practice specific sections (Listening, Structure, Reading), take full test simulations, and receive automated scoring, analysis, and personalized AI-generated feedback to track progress and improve efficiently.",
-          link: "https://testprepai.vercel.app/testprepai",
-          image: "/projects/testprepai.png",
-        },
-        {
-          title: "Smart CV Screening",
-          description:
-            "Enhance your hiring process with AI-powered CV analysis for screening, optimization, and intelligent interviewing.",
-          link: "https://website-screening-cv.vercel.app",
-          image: "/projects/screening.png",
-        },
-        {
-          title: "Accounting Web App",
-          description:
-            "Automatic accounting website that can generate transaction journals automatically by just inputting descriptions & transaction amounts, saving manual recording time & minimizing human error.",
-          link: "https://website-accounting.vercel.app",
-          image: "/projects/accounting.png",
-        },
-        {
-          title: "Portomake",
-          description:
-            "Website portfolio creation service for professionals & freelancers, with order features, template catalog, and custom website consultation.",
-          link: "https://website-portomake.vercel.app",
-          image: "/projects/portomake.png",
-        },
-        {
-          title: "Chatbot Customer Service",
-          description:
-            "Website chatbot for restaurant customer service, automatically answering common questions, reducing staff workload, and improving customer satisfaction.",
-          link: "https://chatbot-cs-demo.vercel.app",
-          image: "/projects/chatbot.png",
-        },
-        {
-          title: "Point of Sales (POS)",
-          description:
-            "Web-based Point of Sales application with AI-based sales analysis features, helping business owners make data-driven decisions based on sales patterns.",
-          link: "https://website-point-of-sale.vercel.app",
-          image: "/projects/pos.png",
-        },
-      ],
-      viewDemo: "View Demo",
-    },
-    contact: {
-      title: "Get In Touch",
-      subtitle:
-        "Have a project in mind or want to collaborate? Feel free to reach out!",
-      form: {
-        name: "Your Name",
-        email: "Your Email",
-        subject: "Subject",
-        message: "Your Message",
-        submit: "Send Message",
-      },
-      success: "Message sent successfully!",
-      error: "There was an error sending your message. Please try again.",
-    },
-    footer: {
-      copyright: "© 2025 Mochamad Yuda Trinurais. All rights reserved.",
-    },
-  },
-  id: {
-    nav: {
-      about: "Tentang",
-      skills: "Keahlian",
-      experience: "Pengalaman",
-      projects: "Proyek",
-      contact: "Kontak",
-    },
-    hero: {
-      title: "AI Web Engineer",
-      subtitle: "Membangun solusi web cerdas dengan teknologi modern",
-      cta: "Lihat Karya Saya",
-    },
-    about: {
-      title: "Tentang Saya",
-      description:
-        "Saya adalah seorang AI Web Engineer yang antusias dengan pengembangan web modern, integrasi kecerdasan buatan, dan penerapan teknologi untuk menyelesaikan masalah nyata. Memiliki pengalaman dalam membangun sistem web end-to-end, baik frontend maupun backend, serta mengembangkan fitur AI untuk meningkatkan efisiensi dan kapabilitas platform. Saya menyukai tantangan baru, mampu bekerja secara kolaboratif maupun mandiri, serta berkomitmen untuk memberikan hasil yang fungsional, scalable, dan user-friendly.",
-    },
-    skills: {
-      title: "Keahlian",
-      hardSkills: "Hard Skills",
-      softSkills: "Soft Skills",
-      tools: "Tools & Framework",
-    },
-    experience: {
-      title: "Pendidikan & Pengalaman",
-      education: "Pendidikan",
-      internships: "Magang",
-      university: "Universitas Nusantara PGRI Kediri",
-      description:
-        "Saya aktif dalam kegiatan akademik & non-akademik, berpartisipasi dalam proyek berbasis teknologi & pengembangan perangkat lunak. Memperkuat keterampilan praktis melalui eksplorasi mandiri teknologi web & AI di luar kurikulum kampus.",
-      degree: "Sarjana Teknik Informatika (S.Kom)",
-      period: "2020 – 2024",
-      gpa: "IPK: 3.84",
-      viewCertificate: "Lihat Sertifikat",
-      aiMastery: {
-        title: "AI Mastery – Studi Independen",
-        company: "Orbit Future Academy",
-        period: "Agustus 2022 – Desember 2022",
-        points: [
-          "Mempelajari dasar Machine Learning, AI, Computer Vision, Data Science, dan Natural Language Processing (NLP).",
-          "Berkolaborasi dalam tim untuk mengembangkan proyek akhir berbasis AI yang memecahkan masalah nyata di sektor layanan publik.",
-        ],
-        certificate: "/certificates/ai-mastery.jpeg",
-      },
-      kalbe: {
-        title: "Web Developer – Magang",
-        company: "PT Kalbe Farma",
-        period: "Februari 2023 – Juni 2023",
-        points: [
-          "Merancang dan mengembangkan sistem web digitalisasi pelatihan internal, dari registrasi hingga pelaporan hasil.",
-          "Menggunakan Laravel 10 & jQuery untuk membangun aplikasi yang user-friendly, efisien, dan terintegrasi dengan database perusahaan.",
-        ],
-        certificate: "/certificates/kalbe.jpeg",
-      },
-      kasihInovasi: {
-        title: "Frontend Developer – Magang",
-        company: "CV Kasih Inovasi Teknologi",
-        period: "Agustus 2023 – Desember 2023",
-        points: [
-          "Mengembangkan website Tryout Academy, platform ujian online yang memungkinkan guru membuat soal ujian & siswa membeli serta mengerjakan ujian.",
-          "Berfokus pada pembuatan UI/UX interaktif & responsif menggunakan Laravel 10 & Vue 3.",
-        ],
-        certificate: "/certificates/kasih-inovasi.jpeg",
-      },
-    },
-    projects: {
-      title: "Proyek Unggulan",
-      items: [
-        {
-          title: "TestPrepAI - Platform Latihan & Simulasi TOEFL ITP",
-          description:
-            "Membangun aplikasi web interaktif untuk persiapan TOEFL ITP yang memungkinkan pengguna berlatih bagian tertentu (Listening, Structure, Reading), mengikuti simulasi ujian lengkap, dan menerima penilaian otomatis, analisis, serta umpan balik yang dihasilkan AI secara personal untuk melacak kemajuan dan meningkatkan efisiensi.",
-          link: "https://testprepai.vercel.app/testprepai",
-          image: "/projects/testprepai.png",
-        },
-        {
-          title: "Smart CV Screening",
-          description:
-            "Tingkatkan proses perekrutan dengan analisis CV berbasis AI untuk penyaringan, optimalisasi, dan wawancara cerdas.",
-          link: "https://website-screening-cv.vercel.app",
-          image: "/projects/screening.png",
-        },
-        {
-          title: "Aplikasi Web Akuntansi",
-          description:
-            "Website akuntansi otomatis yang dapat menghasilkan jurnal transaksi secara otomatis hanya dengan menginput deskripsi & nominal transaksi, menghemat waktu pencatatan manual & meminimalkan human error.",
-          link: "https://website-accounting.vercel.app",
-          image: "/projects/accounting.png",
-        },
-        {
-          title: "Portomake",
-          description:
-            "Website jasa pembuatan website portfolio untuk profesional & freelancer, dengan fitur pemesanan, katalog template, dan konsultasi custom website.",
-          link: "https://website-portomake.vercel.app",
-          image: "/projects/portomake.png",
-        },
-        {
-          title: "Chatbot Layanan Pelanggan",
-          description:
-            "Website chatbot untuk layanan pelanggan restoran, membantu menjawab pertanyaan umum secara otomatis, mengurangi beban staf, dan meningkatkan kepuasan pelanggan.",
-          link: "https://chatbot-cs-demo.vercel.app",
-          image: "/projects/chatbot.png",
-        },
-        {
-          title: "Point of Sales (POS)",
-          description:
-            "Aplikasi Point of Sales berbasis web dengan fitur analisis penjualan berbasis AI, membantu pemilik usaha membuat keputusan berbasis data & pola penjualan.",
-          link: "https://website-point-of-sale.vercel.app",
-          image: "/projects/pos.png",
-        },
-      ],
-      viewDemo: "Lihat Demo",
-    },
-    contact: {
-      title: "Hubungi Saya",
-      subtitle:
-        "Ada proyek yang ingin dikerjakan bersama atau ingin berkolaborasi? Silakan hubungi saya!",
-      form: {
-        name: "Nama Anda",
-        email: "Email Anda",
-        subject: "Subjek",
-        message: "Pesan Anda",
-        submit: "Kirim Pesan",
-      },
-      success: "Pesan terkirim dengan sukses!",
-      error: "Terjadi kesalahan saat mengirim pesan. Silakan coba lagi.",
-    },
-    footer: {
-      copyright: "© 2025 Mochamad Yuda Trinurais. Semua hak dilindungi.",
-    },
-  },
+	en: {
+		nav: {
+			about: "About",
+			skills: "Skills",
+			experience: "Experience",
+			projects: "Projects",
+			contact: "Contact",
+		},
+		hero: {
+			title: "Frontend Developer",
+			subtitle: "Building modern, scalable, and user-focused web experiences",
+			cta: "View My Work",
+		},
+		about: {
+			title: "About Me",
+			description:
+				"I am a Frontend Developer passionate about building modern, scalable, and user-friendly web interfaces. I specialize in creating responsive and high-performance frontend applications while collaborating closely with backend systems and APIs. With experience integrating AI-driven features into web platforms, I focus on turning complex requirements into intuitive and efficient user experiences. I enjoy tackling new challenges, working both independently and in teams, and delivering reliable, well-crafted frontend solutions.",
+		},
+		skills: {
+			title: "Skills & Expertise",
+			hardSkills: "Hard Skills",
+			softSkills: "Soft Skills",
+			tools: "Tools & Frameworks",
+		},
+		experience: {
+			title: "Education & Experience",
+			education: "Education",
+			internships: "Internships",
+			university: "Nusantara PGRI Kediri University",
+			description:
+				"I am active in both academic and non-academic activities, participating in technology-based projects and software development. Strengthened practical skills through independent exploration of web and AI technologies beyond the campus curriculum.",
+			degree: "Bachelor of Computer Science (S.Kom)",
+			period: "2020 – 2024",
+			gpa: "GPA: 3.84",
+			viewCertificate: "View Certificate",
+			aiMastery: {
+				title: "AI Mastery – Independent Study",
+				company: "Orbit Future Academy",
+				period: "August 2022 – December 2022",
+				points: [
+					"Learned fundamentals of Machine Learning, AI, Computer Vision, Data Science, and Natural Language Processing (NLP).",
+					"Collaborated in teams to develop AI-based final projects solving real problems in public service sectors.",
+				],
+				certificate: "/certificates/ai-mastery.jpeg",
+			},
+			kalbe: {
+				title: "Web Developer – Internship",
+				company: "PT Kalbe Farma",
+				period: "February 2023 – June 2023",
+				points: [
+					"Designed and developed internal training digitization web system, from registration to reporting.",
+					"Used Laravel 10 & jQuery to build user-friendly, efficient applications integrated with company database.",
+				],
+				certificate: "/certificates/kalbe.jpeg",
+			},
+			kasihInovasi: {
+				title: "Frontend Developer – Internship",
+				company: "CV Kasih Inovasi Teknologi",
+				period: "August 2023 – December 2023",
+				points: [
+					"Developed Tryout Academy website, an online exam platform allowing teachers to create tests and students to purchase and take exams.",
+					"Focused on creating interactive & responsive UI/UX using Laravel 10 & Vue 3.",
+				],
+				certificate: "/certificates/kasih-inovasi.jpeg",
+			},
+		},
+		projects: {
+			title: "Featured Projects",
+			items: [
+				{
+					title: "TestPrepAI - TOEFL ITP Practice & Simulation Platform",
+					description:
+						"Built an interactive web application for TOEFL ITP preparation that enables users to practice specific sections (Listening, Structure, Reading), take full test simulations, and receive automated scoring, analysis, and personalized AI-generated feedback to track progress and improve efficiently.",
+					link: "https://testprepai.vercel.app/testprepai",
+					image: "/projects/testprepai.png",
+				},
+				{
+					title: "Smart CV Screening",
+					description:
+						"Enhance your hiring process with AI-powered CV analysis for screening, optimization, and intelligent interviewing.",
+					link: "https://website-screening-cv.vercel.app",
+					image: "/projects/screening.png",
+				},
+				{
+					title: "Accounting Web App",
+					description:
+						"Automatic accounting website that can generate transaction journals automatically by just inputting descriptions & transaction amounts, saving manual recording time & minimizing human error.",
+					link: "https://website-accounting.vercel.app",
+					image: "/projects/accounting.png",
+				},
+				{
+					title: "Portomake",
+					description:
+						"Website portfolio creation service for professionals & freelancers, with order features, template catalog, and custom website consultation.",
+					link: "https://website-portomake.vercel.app",
+					image: "/projects/portomake.png",
+				},
+				{
+					title: "Chatbot Customer Service",
+					description:
+						"Website chatbot for restaurant customer service, automatically answering common questions, reducing staff workload, and improving customer satisfaction.",
+					link: "https://chatbot-cs-demo.vercel.app",
+					image: "/projects/chatbot.png",
+				},
+				{
+					title: "Point of Sales (POS)",
+					description:
+						"Web-based Point of Sales application with AI-based sales analysis features, helping business owners make data-driven decisions based on sales patterns.",
+					link: "https://website-point-of-sale.vercel.app",
+					image: "/projects/pos.png",
+				},
+			],
+			viewDemo: "View Demo",
+		},
+		contact: {
+			title: "Get In Touch",
+			subtitle:
+				"Have a project in mind or want to collaborate? Feel free to reach out!",
+			form: {
+				name: "Your Name",
+				email: "Your Email",
+				subject: "Subject",
+				message: "Your Message",
+				submit: "Send Message",
+			},
+			success: "Message sent successfully!",
+			error: "There was an error sending your message. Please try again.",
+		},
+		footer: {
+			copyright: "© 2026 Mochamad Yuda Trinurais. All rights reserved.",
+		},
+	},
+	id: {
+		nav: {
+			about: "Tentang",
+			skills: "Keahlian",
+			experience: "Pengalaman",
+			projects: "Proyek",
+			contact: "Kontak",
+		},
+		hero: {
+			title: "Frontend Developer",
+			subtitle:
+				"Membangun pengalaman web modern, scalable, dan berfokus pada pengguna",
+			cta: "Lihat Karya Saya",
+		},
+		about: {
+			title: "Tentang Saya",
+			description:
+				"Saya adalah seorang Frontend Developer yang berfokus pada pengembangan antarmuka web modern, scalable, dan user-friendly. Saya terbiasa membangun aplikasi frontend yang responsif dan berperforma tinggi, serta berkolaborasi dengan backend dan API. Dengan pengalaman mengintegrasikan fitur berbasis AI ke dalam aplikasi web, saya berusaha menerjemahkan kebutuhan yang kompleks menjadi pengalaman pengguna yang intuitif dan efisien. Saya menyukai tantangan baru, mampu bekerja secara mandiri maupun dalam tim, dan berkomitmen menghadirkan solusi frontend yang rapi, andal, dan mudah dikembangkan.",
+		},
+		skills: {
+			title: "Keahlian & Kompetensi",
+			hardSkills: "Hard Skills",
+			softSkills: "Soft Skills",
+			tools: "Tools & Framework",
+		},
+		experience: {
+			title: "Pendidikan & Pengalaman",
+			education: "Pendidikan",
+			internships: "Magang",
+			university: "Universitas Nusantara PGRI Kediri",
+			description:
+				"Aktif dalam kegiatan akademik dan non-akademik dengan keterlibatan pada proyek berbasis teknologi dan pengembangan perangkat lunak. Mengembangkan keterampilan praktis melalui eksplorasi mandiri teknologi frontend web dan integrasi AI di luar kurikulum perkuliahan.",
+			degree: "Sarjana Teknik Informatika (S.Kom)",
+			period: "2020 – 2024",
+			gpa: "IPK: 3.84",
+			viewCertificate: "Lihat Sertifikat",
+			aiMastery: {
+				title: "AI Mastery – Studi Independen",
+				company: "Orbit Future Academy",
+				period: "Agustus 2022 – Desember 2022",
+				points: [
+					"Mengembangkan website Tryout Academy, platform ujian online yang memungkinkan guru membuat soal dan siswa membeli serta mengerjakan ujian secara daring.",
+					"Berfokus pada pengembangan UI/UX yang interaktif dan responsif menggunakan Laravel 10 dan Vue 3.",
+				],
+				certificate: "/certificates/ai-mastery.jpeg",
+			},
+			kalbe: {
+				title: "Web Developer – Magang",
+				company: "PT Kalbe Farma",
+				period: "Februari 2023 – Juni 2023",
+				points: [
+					"Merancang dan mengembangkan sistem web digitalisasi pelatihan internal, dari registrasi hingga pelaporan hasil.",
+					"Menggunakan Laravel 10 & jQuery untuk membangun aplikasi yang user-friendly, efisien, dan terintegrasi dengan database perusahaan.",
+				],
+				certificate: "/certificates/kalbe.jpeg",
+			},
+			kasihInovasi: {
+				title: "Frontend Developer – Magang",
+				company: "CV Kasih Inovasi Teknologi",
+				period: "Agustus 2023 – Desember 2023",
+				points: [
+					"Mengembangkan website Tryout Academy, platform ujian online yang memungkinkan guru membuat soal ujian & siswa membeli serta mengerjakan ujian.",
+					"Berfokus pada pembuatan UI/UX interaktif & responsif menggunakan Laravel 10 & Vue 3.",
+				],
+				certificate: "/certificates/kasih-inovasi.jpeg",
+			},
+		},
+		projects: {
+			title: "Proyek Unggulan",
+			items: [
+				{
+					title: "TestPrepAI - Platform Latihan & Simulasi TOEFL ITP",
+					description:
+						"Membangun aplikasi web interaktif untuk persiapan TOEFL ITP yang memungkinkan pengguna berlatih bagian tertentu (Listening, Structure, Reading), mengikuti simulasi ujian lengkap, dan menerima penilaian otomatis, analisis, serta umpan balik yang dihasilkan AI secara personal untuk melacak kemajuan dan meningkatkan efisiensi.",
+					link: "https://testprepai.vercel.app/testprepai",
+					image: "/projects/testprepai.png",
+				},
+				{
+					title: "Smart CV Screening",
+					description:
+						"Tingkatkan proses perekrutan dengan analisis CV berbasis AI untuk penyaringan, optimalisasi, dan wawancara cerdas.",
+					link: "https://website-screening-cv.vercel.app",
+					image: "/projects/screening.png",
+				},
+				{
+					title: "Aplikasi Web Akuntansi",
+					description:
+						"Website akuntansi otomatis yang dapat menghasilkan jurnal transaksi secara otomatis hanya dengan menginput deskripsi & nominal transaksi, menghemat waktu pencatatan manual & meminimalkan human error.",
+					link: "https://website-accounting.vercel.app",
+					image: "/projects/accounting.png",
+				},
+				{
+					title: "Portomake",
+					description:
+						"Website jasa pembuatan website portfolio untuk profesional & freelancer, dengan fitur pemesanan, katalog template, dan konsultasi custom website.",
+					link: "https://website-portomake.vercel.app",
+					image: "/projects/portomake.png",
+				},
+				{
+					title: "Chatbot Layanan Pelanggan",
+					description:
+						"Website chatbot untuk layanan pelanggan restoran, membantu menjawab pertanyaan umum secara otomatis, mengurangi beban staf, dan meningkatkan kepuasan pelanggan.",
+					link: "https://chatbot-cs-demo.vercel.app",
+					image: "/projects/chatbot.png",
+				},
+				{
+					title: "Point of Sales (POS)",
+					description:
+						"Aplikasi Point of Sales berbasis web dengan fitur analisis penjualan berbasis AI, membantu pemilik usaha membuat keputusan berbasis data & pola penjualan.",
+					link: "https://website-point-of-sale.vercel.app",
+					image: "/projects/pos.png",
+				},
+			],
+			viewDemo: "Lihat Demo",
+		},
+		contact: {
+			title: "Hubungi Saya",
+			subtitle:
+				"Ada proyek yang ingin dikerjakan bersama atau ingin berkolaborasi? Silakan hubungi saya!",
+			form: {
+				name: "Nama Anda",
+				email: "Email Anda",
+				subject: "Subjek",
+				message: "Pesan Anda",
+				submit: "Kirim Pesan",
+			},
+			success: "Pesan terkirim dengan sukses!",
+			error: "Terjadi kesalahan saat mengirim pesan. Silakan coba lagi.",
+		},
+		footer: {
+			copyright: "© 2026 Mochamad Yuda Trinurais. Semua hak dilindungi.",
+		},
+	},
 };
 
 export default function Home() {
@@ -357,7 +348,7 @@ export default function Home() {
 			return;
 		}
 
-		window.location.href = `mailto:mochamadyudatrinurais@gmail.com?subject=${encodeURIComponent(
+		window.location.href = `mailto:yudarais1999@gmail.com?subject=${encodeURIComponent(
 			subject
 		)}&body=${encodeURIComponent(
 			`Name: ${name}\nEmail: ${email}\n\n${message}`
@@ -554,17 +545,16 @@ export default function Home() {
 
 							<div className="flex flex-wrap gap-4 mb-8">
 								<a
-									href="tel:085179945123"
+									href="tel:081230490961"
 									className="flex items-center gap-2 text-gray-300 hover:text-white"
 								>
-									<FiPhone className="text-blue-400" /> 0851-7994-5123
+									<FiPhone className="text-blue-400" /> 0812-3049-0961
 								</a>
 								<a
-									href="mailto:mochamadyudatrinurais@gmail.com"
+									href="mailto:yudarais1999@gmail.com"
 									className="flex items-center gap-2 text-gray-300 hover:text-white"
 								>
-									<FiMail className="text-blue-400" />{" "}
-									mochamadyudatrinurais@gmail.com
+									<FiMail className="text-blue-400" /> yudarais1999@gmail.com
 								</a>
 								<div className="flex items-center gap-2 text-gray-300">
 									<FiMapPin className="text-blue-400" /> Kediri, Jawa Timur,
@@ -635,7 +625,10 @@ export default function Home() {
 										</div>
 										<div>
 											<span className="text-purple-400">role:</span>{" "}
-											<span className="text-green-400">'AI Web Engineer'</span>,
+											<span className="text-green-400">
+												'Frontend Developer'
+											</span>
+											,
 										</div>
 										<div>
 											<span className="text-purple-400">location:</span>{" "}
@@ -648,14 +641,20 @@ export default function Home() {
 											<span className="text-purple-400">skills:</span> [
 										</div>
 										<div className="ml-6">
-											<span className="text-green-400">'Web Development'</span>,
-										</div>
-										<div className="ml-6">
-											<span className="text-green-400">'AI Integration'</span>,
+											<span className="text-green-400">
+												'Frontend Engineering'
+											</span>
+											,
 										</div>
 										<div className="ml-6">
 											<span className="text-green-400">
-												'Workflow Automation'
+												'Modern UI Development'
+											</span>
+											,
+										</div>
+										<div className="ml-6">
+											<span className="text-green-400">
+												'AI-Assisted Development'
 											</span>
 										</div>
 										<div>]</div>
@@ -702,7 +701,8 @@ export default function Home() {
 									{[
 										"Coding & exploring new tech",
 										"Creative problem solving",
-										"Watching movies",
+										"Exploring AI prompting",
+										"movies",
 										"Gaming",
 									].map((hobby, index) => (
 										<motion.div
@@ -746,13 +746,13 @@ export default function Home() {
 								</h3>
 								<ul className="space-y-3">
 									{[
-										"Website development (frontend & backend)",
-										"Database management",
-										"System debugging & troubleshooting",
-										"Figma design to interactive website",
-										"Machine learning & AI web integration",
-										"REST API & microservices",
-										"Workflow automation & third-party integration",
+										"Frontend engineering with modern frameworks",
+										"Responsive & accessible UI development",
+										"Component-based architecture",
+										"State management & frontend data flow",
+										"Performance optimization & best practices",
+										"REST API integration & frontend data handling",
+										"AI-assisted frontend development & automation",
 									].map((skill, index) => (
 										<li key={index} className="flex items-start">
 											<div className="w-1.5 h-1.5 mt-2.5 rounded-full bg-blue-400 mr-3"></div>
@@ -802,8 +802,16 @@ export default function Home() {
 										<span>React</span>
 									</div>
 									<div className="flex items-center gap-3 p-3 bg-gray-700/50 rounded-lg">
+										<FaVuejs className="text-green-500 text-xl" />
+										<span>Vue.js</span>
+									</div>
+									<div className="flex items-center gap-3 p-3 bg-gray-700/50 rounded-lg">
 										<SiNextdotjs className="text-white text-xl" />
 										<span>Next.js</span>
+									</div>
+									<div className="flex items-center gap-3 p-3 bg-gray-700/50 rounded-lg">
+										<FaLaravel className="text-red-500 text-xl" />
+										<span>Laravel</span>
 									</div>
 									<div className="flex items-center gap-3 p-3 bg-gray-700/50 rounded-lg">
 										<SiTailwindcss className="text-cyan-400 text-xl" />
@@ -814,40 +822,16 @@ export default function Home() {
 										<span>Framer Motion</span>
 									</div>
 									<div className="flex items-center gap-3 p-3 bg-gray-700/50 rounded-lg">
-										<FaLaravel className="text-red-500 text-xl" />
-										<span>Laravel</span>
+										<SiTypescript className="text-blue-500 text-xl" />
+										<span>TypeScript</span>
 									</div>
 									<div className="flex items-center gap-3 p-3 bg-gray-700/50 rounded-lg">
-										<FaVuejs className="text-green-500 text-xl" />
-										<span>Vue.js</span>
+										<SiJavascript className="text-yellow-400 text-xl" />
+										<span>JavaScript</span>
 									</div>
 									<div className="flex items-center gap-3 p-3 bg-gray-700/50 rounded-lg">
-										<FaNodeJs className="text-green-600 text-xl" />
-										<span>Node.js</span>
-									</div>
-									<div className="flex items-center gap-3 p-3 bg-gray-700/50 rounded-lg">
-										<SiNestjs className="text-red-500 text-xl" />
-										<span>NestJS</span>
-									</div>
-									<div className="flex items-center gap-3 p-3 bg-gray-700/50 rounded-lg">
-										<SiSpringboot className="text-green-500 text-xl" />
-										<span>Spring Boot</span>
-									</div>
-									<div className="flex items-center gap-3 p-3 bg-gray-700/50 rounded-lg">
-										<SiMysql className="text-blue-500 text-xl" />
-										<span>MySQL</span>
-									</div>
-									<div className="flex items-center gap-3 p-3 bg-gray-700/50 rounded-lg">
-										<SiPostgresql className="text-blue-400 text-xl" />
-										<span>PostgreSQL</span>
-									</div>
-									<div className="flex items-center gap-3 p-3 bg-gray-700/50 rounded-lg">
-										<SiMongodb className="text-green-500 text-xl" />
-										<span>MongoDB</span>
-									</div>
-									<div className="flex items-center gap-3 p-3 bg-gray-700/50 rounded-lg">
-										<SiDocker className="text-blue-400 text-xl" />
-										<span>Docker</span>
+										<TbApi className="text-cyan-400 text-xl" />
+										<span>REST API</span>
 									</div>
 									<div className="flex items-center gap-3 p-3 bg-gray-700/50 rounded-lg">
 										<FaPython className="text-yellow-400 text-xl" />
@@ -1158,10 +1142,10 @@ export default function Home() {
 										<div>
 											<h4 className="text-gray-400 text-sm">Email</h4>
 											<a
-												href="mailto:mochamadyudatrinurais@gmail.com"
+												href="mailto:yudarais1999@gmail.com"
 												className="text-white hover:text-blue-300"
 											>
-												mochamadyudatrinurais@gmail.com
+												yudarais1999@gmail.com
 											</a>
 										</div>
 									</div>
@@ -1173,10 +1157,10 @@ export default function Home() {
 										<div>
 											<h4 className="text-gray-400 text-sm">Phone</h4>
 											<a
-												href="tel:085179945123"
+												href="tel:081230490961"
 												className="text-white hover:text-blue-300"
 											>
-												0851-7994-5123
+												0812-3049-0961
 											</a>
 										</div>
 									</div>
